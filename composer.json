@@ -1,0 +1,37 @@
+{
+    "name": "iambod/symfony-serializer-xlsx",
+    "description": "Integration with symfony/serializer to provide services",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Károly Bödei",
+            "email": "boodeikaroly@gmail.com"
+        }
+    ],
+    "keywords": [
+        "symfony",
+        "serializer",
+        "encoder",
+        "xlsx"
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2.5",
+        "symfony/serializer": "^4.4|^5.0",
+        "phpoffice/phpspreadsheet": "^1.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "10.0.x-dev",
+        "symfony/property-access": "6.0.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "IAmBod\\Serializer\\Xlsx\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IAmBod\\Serializer\\Xlsx\\Test\\": "test/src"
+        }
+    }
+}
