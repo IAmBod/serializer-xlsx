@@ -17,12 +17,12 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.2.5",
-        "symfony/serializer": "^4.4|^5.0",
+        "symfony/serializer": "^4.4 || ^5.0 || ^6.0",
         "phpoffice/phpspreadsheet": "^1.0.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "10.0.x-dev",
-        "symfony/property-access": "6.0.x-dev"
+        "symfony/phpunit-bridge": "^5.3 || ^6.0",
+        "symfony/property-access": "^4.4 || ^5.0 || ^6.0"
     },
     "autoload": {
         "psr-4": {
