@@ -39,7 +39,7 @@ class XlsxEncoder implements EncoderInterface, DecoderInterface
         $this->defaultContext = array_merge($this->defaultContext, $defaultContext);
     }
 
-    public function encode($data, string $format, array $context = []): string
+    public function encode($data, $format, array $context = []): string
     {
         if (!is_iterable($data)) {
             $data = [[$data]];
@@ -127,12 +127,12 @@ class XlsxEncoder implements EncoderInterface, DecoderInterface
         return $value;
     }
 
-    public function supportsEncoding(string $format): bool
+    public function supportsEncoding($format): bool
     {
         return self::FORMAT === $format;
     }
 
-    public function decode(string $data, string $format, array $context = []): array
+    public function decode($data, $format, array $context = []): array
     {
         if (empty($data)) {
             return [];
@@ -190,7 +190,7 @@ class XlsxEncoder implements EncoderInterface, DecoderInterface
         return $result[0];
     }
 
-    public function supportsDecoding(string $format): bool
+    public function supportsDecoding($format): bool
     {
         return self::FORMAT === $format;
     }
